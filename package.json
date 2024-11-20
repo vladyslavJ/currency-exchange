@@ -1,0 +1,21 @@
+{
+	"name": "currency-exchange",
+	"version": "1.0.0",
+	"description": "Figma: [link](https://www.figma.com/design/TukaMnvFTiAeGHJDaxj7MU/Currency-exchange?node-id=0-1&t=EsjDPUM6CBcS4hsx-1)",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "nodemon"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.3",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.1",
+		"nodemailer": "^6.9.16"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.7"
+	}
+}

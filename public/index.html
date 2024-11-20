@@ -3,22 +3,61 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="./favicon.ico" />
+		<title>Currency Exchange</title>
 		<link rel="stylesheet" href="styles.css" />
-		<title>Обмін валют</title>
-		<style>
-			body {
-				font-family: 'Segoe UI', sans-serif;
-			}
-		</style>
 	</head>
 	<body>
-		<div class="wrapper"><h1>Обмін валют</h1></div>
-		<div class="content"></div>
-		<div class="footer">
-			<footer>
-				<p>info</p>
-			</footer>
+		<div class="container">
+			<header class="header">
+				<h1>Currency exchange</h1>
+			</header>
+
+			<main class="main-content">
+				<h2>100 USD to UAH - Convert US Dollars to Ukrainian Hryvni</h2>
+				<div class="converter">
+					<div class="input-section">
+						<label for="amount">Amount</label>
+						<input
+							type="text"
+							id="amount"
+							value="$100.00"
+							readonly
+						/>
+					</div>
+					<div class="dropdown-section">
+						<label for="from-currency">From</label>
+						<select id="from-currency">
+							<option>USD - US Dollar</option>
+						</select>
+					</div>
+					<div class="dropdown-section">
+						<label for="to-currency">To</label>
+						<select id="to-currency">
+							<option>UAH - Ukrainian Hryvnia</option>
+						</select>
+					</div>
+					<button class="convert-btn">Convert</button>
+				</div>
+
+				<div class="result-section">
+					<p><strong>100.00 US Dollars =</strong></p>
+					<p class="result">4,138.15 Ukrainian Hryvni</p>
+					<p>1 USD = 41.3729 UAH<br />1 UAH = 0.0241704 USD</p>
+					<p class="last-updated">
+						US Dollar to Ukrainian Hryvnia conversion — Last updated
+						Nov 6, 2024, 22:52 UTC
+					</p>
+				</div>
+
+				<div class="email-section">
+					<p>
+						Sign an email to receive information on changing the
+						course:
+					</p>
+					<input type="email" placeholder="Enter your email" />
+					<button class="subscribe-btn">Yep!</button>
+				</div>
+			</main>
 		</div>
 	</body>
 </html>
